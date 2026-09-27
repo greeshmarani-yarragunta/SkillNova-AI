@@ -1,0 +1,12 @@
+Django==5.1.15
+djangorestframework==3.17.2
+djangorestframework-simplejwt
+django-cors-headers
+django-filter
+PyMySQL
+cryptography
+python-dotenv
+pypdf
+python-docx
+Pillow
+gunicorn
