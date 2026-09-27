@@ -1,0 +1,233 @@
+/* SkillNova AI - Compact & Professional Footer */
+
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 2.25rem 0 1.5rem 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  max-width: 440px;
+  flex: 0 1 auto;
+}
+
+.footer-brand-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+}
+
+.footer-brand-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.footer-brand-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.footer-brand-title span {
+  color: var(--secondary);
+}
+
+.footer-description {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.footer-tagline {
+  font-size: 0.825rem;
+  color: var(--text-secondary, #CBD5E1);
+  line-height: 1.5;
+  margin: 0;
+}
+
+[data-theme='light'] .footer-brand-title {
+  color: #0F172A;
+}
+
+[data-theme='light'] .footer-description,
+[data-theme='light'] .footer-tagline {
+  color: #475569;
+}
+
+.footer-links-col {
+  flex: 0 1 auto;
+}
+
+.footer-links-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.85rem 0;
+}
+
+[data-theme='light'] .footer-links-heading {
+  color: #0F172A;
+}
+
+.footer-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(130px, 1fr));
+  gap: 0.55rem 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav-link {
+  font-size: 0.875rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease, transform 0.15s ease;
+  display: inline-block;
+}
+
+[data-theme='light'] .footer-nav-link {
+  color: #475569;
+}
+
+.footer-nav-link:hover {
+  color: var(--primary);
+  transform: translateX(2px);
+}
+
+[data-theme='light'] .footer-nav-link:hover {
+  color: #0F766E;
+}
+
+.footer-support-prompt {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  font-size: 0.825rem;
+}
+
+.footer-support-text {
+  color: var(--muted);
+}
+
+[data-theme='light'] .footer-support-text {
+  color: #64748B;
+}
+
+.footer-support-action {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.15s ease;
+}
+
+[data-theme='light'] .footer-support-action {
+  color: #0F766E;
+}
+
+.footer-support-action:hover {
+  color: var(--secondary);
+}
+
+.footer-bottom-bar {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+[data-theme='light'] .footer-bottom-bar {
+  color: #64748B;
+}
+
+.footer-copyright {
+  margin: 0;
+}
+
+.footer-subtext {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 1.75rem 0 1.25rem 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .footer-links-col {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .footer-nav-grid {
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+    gap: 0.55rem 1.5rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-nav-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .footer-support-prompt {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}

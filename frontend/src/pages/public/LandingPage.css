@@ -1,0 +1,571 @@
+/* ==========================================================================
+   SkillNova AI - SaaS Landing Page Styles (Clean Centered Hero Layout)
+   ========================================================================== */
+
+/* Page Wrapper */
+.landing-page {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+
+/* Centered Max-Width Container */
+.landing-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------
+   1. Hero Section (Centered & Balanced Layout)
+   -------------------------------------------------------------------------- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  padding: 80px 0 54px 0;
+  border-bottom: 1px solid #162B40;
+  background-color: var(--background);
+  background-image: radial-gradient(
+    ellipse 75% 55% at 50% 0%,
+    rgba(20, 184, 166, 0.1),
+    transparent 70%
+  );
+}
+
+.hero-centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: 9999px;
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.25);
+  color: #14B8A6;
+  font-size: 0.825rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.hero-heading {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: #F8FAFC;
+  max-width: 780px;
+  margin: 0 auto 1.35rem auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  text-align: center;
+}
+
+.hero-highlight {
+  color: #14B8A6;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: #94A3B8;
+  line-height: 1.65;
+  max-width: 620px;
+  margin: 0 auto 2.25rem auto;
+  text-align: center;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 2.5rem;
+}
+
+.hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #14B8A6;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 2px 6px rgba(20, 184, 166, 0.25);
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.hero-btn-primary:hover {
+  background-color: #0D9488;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.35);
+  color: #FFFFFF;
+}
+
+.hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgba(16, 31, 50, 0.7);
+  color: #F8FAFC;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  border: 1px solid #20354A;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.hero-btn-secondary:hover {
+  background-color: #14283D;
+  border-color: #334E68;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.hero-trust-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+  font-size: 0.85rem;
+  color: #94A3B8;
+}
+
+.hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-trust-icon {
+  color: #22C55E;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   2. Core Capabilities Section
+   -------------------------------------------------------------------------- */
+.capabilities-section {
+  padding: 56px 0;
+  background-color: var(--background);
+  border-top: 1px solid #162B40;
+}
+
+.capabilities-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.capabilities-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #14B8A6;
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.25);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  margin-bottom: 0.65rem;
+  letter-spacing: 0.02em;
+}
+
+.capabilities-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #F8FAFC;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.capabilities-subtitle {
+  color: #94A3B8;
+  font-size: 0.975rem;
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.capability-card {
+  background: #101F32;
+  border: 1px solid #20354A;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.capability-card:hover {
+  border-color: #14B8A6;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -6px rgba(0, 0, 0, 0.4);
+}
+
+.capability-icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  color: #14B8A6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.capability-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #F8FAFC;
+  margin-top: 2px;
+}
+
+.capability-card-desc {
+  color: #94A3B8;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.capability-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #14B8A6;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: auto;
+  padding-top: 8px;
+  transition: gap 0.15s ease, color 0.15s ease;
+  text-decoration: none;
+}
+
+.capability-card-link:hover {
+  color: #22D3EE;
+  gap: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   3. CTA Section
+   -------------------------------------------------------------------------- */
+.landing-cta-section {
+  padding: 56px 0;
+  background-color: #101F32;
+  border-top: 1px solid #20354A;
+}
+
+.cta-box {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #F8FAFC;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.cta-desc {
+  color: #94A3B8;
+  font-size: 0.975rem;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------------------
+   4. Responsive Design Breakpoints
+   -------------------------------------------------------------------------- */
+
+/* Tablet & Smaller Desktop (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 64px 0 36px 0;
+  }
+
+  .hero-heading {
+    font-size: 44px;
+    line-height: 1.12;
+    max-width: 100%;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    font-size: 17px;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 48px 0 32px 0;
+  }
+
+  .landing-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-heading {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 360px;
+    gap: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-trust-list {
+    gap: 1rem;
+    font-size: 0.825rem;
+  }
+
+  .capabilities-section {
+    padding: 40px 0;
+  }
+
+  .capabilities-title {
+    font-size: 1.65rem;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cta-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
+/* Very Small Mobile (max-width: 425px) */
+@media (max-width: 425px) {
+  .landing-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-heading {
+    font-size: 30px;
+    line-height: 1.18;
+  }
+}
+
+/* Extra Small Mobile (max-width: 360px, e.g. 320px) */
+@media (max-width: 360px) {
+  .hero-heading {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+}
+
+/* ==========================================================================
+   5. Light Mode Contrast & Typography Overrides (WCAG Compliant)
+   ========================================================================== */
+
+/* Hero Section */
+[data-theme='light'] .hero-section {
+  border-bottom: 1px solid #E2E8F0;
+  background-image: radial-gradient(
+    ellipse 75% 55% at 50% 0%,
+    rgba(15, 118, 110, 0.06),
+    transparent 70%
+  );
+}
+
+[data-theme='light'] .hero-badge {
+  color: #0F766E;
+  background: rgba(15, 118, 110, 0.1);
+  border: 1px solid rgba(15, 118, 110, 0.25);
+}
+
+[data-theme='light'] .hero-heading {
+  color: #0F172A;
+}
+
+[data-theme='light'] .hero-highlight {
+  color: #0F766E;
+}
+
+[data-theme='light'] .hero-description {
+  color: #475569;
+}
+
+[data-theme='light'] .hero-btn-primary {
+  background-color: #0F766E;
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(15, 118, 110, 0.25);
+}
+
+[data-theme='light'] .hero-btn-primary:hover {
+  background-color: #115E59;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.35);
+}
+
+[data-theme='light'] .hero-btn-secondary {
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border: 1px solid #CBD5E1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='light'] .hero-btn-secondary:hover {
+  background-color: #F8FAFC;
+  border-color: #94A3B8;
+  color: #0F172A;
+}
+
+[data-theme='light'] .hero-trust-list {
+  color: #475569;
+}
+
+[data-theme='light'] .hero-trust-icon {
+  color: #16A34A;
+}
+
+/* Core Capabilities Section */
+[data-theme='light'] .capabilities-section {
+  border-top: 1px solid #E2E8F0;
+}
+
+[data-theme='light'] .capabilities-badge {
+  color: #0F766E;
+  background: rgba(15, 118, 110, 0.1);
+  border: 1px solid rgba(15, 118, 110, 0.25);
+}
+
+[data-theme='light'] .capabilities-title {
+  color: #0F172A;
+}
+
+[data-theme='light'] .capabilities-subtitle {
+  color: #475569;
+}
+
+[data-theme='light'] .capability-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='light'] .capability-card:hover {
+  border-color: #0F766E;
+  box-shadow: 0 10px 24px -4px rgba(15, 118, 110, 0.12);
+}
+
+[data-theme='light'] .capability-icon-box {
+  background: rgba(15, 118, 110, 0.1);
+  border: 1px solid rgba(15, 118, 110, 0.2);
+  color: #0F766E;
+}
+
+[data-theme='light'] .capability-card-title {
+  color: #0F172A;
+}
+
+[data-theme='light'] .capability-card-desc {
+  color: #475569;
+}
+
+[data-theme='light'] .capability-card-link {
+  color: #0F766E;
+}
+
+[data-theme='light'] .capability-card-link:hover {
+  color: #115E59;
+}
+
+/* CTA Section */
+[data-theme='light'] .landing-cta-section {
+  background-color: #F8FAFC;
+  border-top: 1px solid #E2E8F0;
+}
+
+[data-theme='light'] .cta-title {
+  color: #0F172A;
+}
+
+[data-theme='light'] .cta-desc {
+  color: #475569;
+}
